@@ -1,0 +1,13 @@
+.nav-item{
+    display: flex;
+    margin-inline: 10px;
+}
+ 
+#search:focus {
+    outline: none;
+  }
+  body{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
