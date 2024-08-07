@@ -4,6 +4,7 @@ let slideButton=document.getElementById("slideButtons");
 let catCards=document.getElementById("categories-card");
 let cat=document.getElementById("cat");
 let selection=document.getElementById("selection")
+let search=document.getElementById("search");
 const categoryURL="http://localhost:3003/categories";
 let products=document.getElementById("productCards");
 fetch(sliderURL)
