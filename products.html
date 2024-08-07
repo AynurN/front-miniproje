@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.min.js" integrity="sha512-w4LAuDSf1hC+8OvGX+CKTcXpW4rQdfmdD8prHuprvKv3MPhXH9LonXX9N2y1WEl2u3ZuUSumlNYHOlxkS/XEHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.css" integrity="sha512-Gebe6n4xsNr0dWAiRsMbjWOYe1PPVar2zBKIyeUQKPeafXZ61sjU2XCW66JxIPbDdEH3oQspEoWX8PQRhaKyBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    th, td{
+        border: 1px solid black; 
+        padding: 10px;
+    }
+   </style>
+    <title>Products</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; margin:40px;">
+        <h1 style="color: #3BB77E ;">Product Admin Panel</h1>
+        <div>
+            <a href="./index.html" class="btn btn-secondary">Go Back</a>
+           <button data-bs-target="#createModal" data-bs-toggle="modal" class="btn btn-primary">Add</button>
+       </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <table style="border: 1px solid black" id="table">
+            <thead style="color:#3BB77E  ;">
+                <th>Id</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Old Price</th>
+                <th>Operations</th>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+    </div>
+    <div class="modal" id="createModal"tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+             <form action="" style="display: flex; flex-direction: column;" id="createPro"> 
+                 <label>Id</label>
+                 <input type="number" name="id">
+                 <label>Category</label>
+                        <select name="category" id="cat">
+                        </select>
+                        <label>Image URL</label>
+                        <input type="url" name="img">
+                        <label>Description</label>
+                        <input type="text" name="desc">
+                        <label>Company</label>
+                        <input type="text" name="company">
+                        <label>Price</label>
+                        <input type="text" name="price">
+                        <label>Old Price</label>
+                        <input type="text" name="oldPrice">
+             </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" form="createPro" class="btn btn-primary">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    <script src="./assets/js files/products.js"></script>
+</body>
+</html>

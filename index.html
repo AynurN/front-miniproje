@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>nest-frontend</title>
 </head>
-<body >
+<body  style="margin: 5px;">
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 100px; width: 100%;">
         <div class="container">
@@ -27,14 +27,14 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            <div class="d-flex" role="search" style="border: 2px #57cd57 solid; width: 600px; height: 50px; background-image: url(https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/search.png
+            <div class="d-flex" role="search" style="border: 2px #3BB77E solid; width: 600px; height: 50px; background-image: url(https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/search.png
             ); background-repeat: no-repeat;  background-position: right center;">
-                     <select name="category" id="" style="border-width: 0; background-color: transparent;">
-                    <option value="">All categories </option></select>
+                     <select name="category" id="" style="border-width: 0; background-color: transparent; font-weight: bold">
+                    <option value="" >All categories </option></select>
                     <input id="search" type="search" placeholder=" |  Search for items" aria-label="Search" style=" border-width: 0; background-color: transparent;">
               
             </div>
-            <select name="category" id="" style="border-width: 0; color: #57cd57; margin-inline: 10px;">
+            <select name="category" id="" style="border-width: 0; color: #3BB77E; margin-inline: 10px;">
                 <option value="" >   
                     <i class="fa-solid fa-location-dot"></i> Your location </option>
             </select>
@@ -55,15 +55,323 @@
           </div>
         </div>
       </nav>
-      <div class="container border-top border-bottom" style="width: 100%;" >
-       <div style="display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: #3BB77E; width: 20%; margin: 10px;color: white; font-weight:bold; font-size: large; padding-top: 10px; height: 40px; border-radius: 10px;">
+      <div class="fixed container border-top border-bottom" style="width: 100%; display: flex; justify-content: space-between; " >
+        <div style="display: flex; justify-content: center; align-items: center;">
+       <div style="display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: #3BB77E; width: 20%;color: white; font-weight:bold; padding-top: 10px; height: 40px; border-radius: 5px;">
         <i class="fa-regular fa-rectangle-list" style="margin-bottom: 15px; margin-right: 5px;"></i>
         <p >Browse All Categories</p>
        </div>
-
-            </a>
+            <ul style="display: flex;" class="list">
+              <li>Deals</li>
+              <li><select name="" id=""><option value="">Home</option></select></li>
+              <li>About</li>
+              <li><select name="" id="">
+                <option value="">Shop</option>
+              </select></li>
+              <li><select name="" id="">
+                <option value="">Vendors</option>
+              </select></li>
+              <li><select name="" id="">
+                <option value="">Mega menu</option>
+              </select></li>
+              <li><select name="" id="">
+                <option value="">Blog</option>
+              </select></li>
+              <li><select name="" id=""><option value="">Pages</option></select></li>
+              <li>Contact</li>
+            </ul>
+            </div>
+            <div style="display: flex;">
+              <img src="./assets/imgs/icons/icon-headphone.svg" alt="">
+              <div style="display: flex; flex-direction: column; align-items: center; ">
+                <h3 style="font-weight: bold; margin-bottom: 0; color:#3BB77E ; font-size: 27px; margin-top: 15px;">1900 - 888</h3>
+                <p >24/7 Support Center</p>
+              </div>
+            </div>
         </div>
-             
+    <div class="slider" >
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators" id="slideButtons">
+        </div>
+        <div class="carousel-inner " id="slider">
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </div id="categories">  
+    <div style="display: flex; align-items: center; margin:20px;" id="cat">
+      <h3 style="font-weight: bold;">Featured Categories</h3>
+    </div>
+    <div id="categories-card" style="display: flex;">
+    </div>
+    <div style="display: flex;">
+<div class="container-2"style="border-radius: 10px; margin:15px; width: 30%;">
+ <img src="./assets/imgs/Static-imgs/banner-1.png" alt="" style="border-radius: 10px; margin:15px; width: 100%;">
+ <div class="img-text">
+  <h4 style="font-weight: bold; margin-bottom: 50px;">Everyday Fresh & <br> Clean with Our <br> Products</h4>
+  <button class="btn btn-success">Shop Now -></button>
+ </div>
+</div>
+<div class="container-2"style="border-radius: 10px; margin:15px; width: 30%;">
+  <img src="./assets/imgs/Static-imgs/banner-2.png" alt="" style="border-radius: 10px; margin:15px; width: 100%;">
+  <div class="img-text">
+   <h4 style="font-weight: bold; margin-bottom: 50px;">  Make your Breakfast <br> Healthy and Easy</h4>
+   <button class="btn btn-success">Shop Now -></button>
+  </div>
+ </div>
+ <div class="container-2"style="border-radius: 10px; margin:15px; width: 30%;">
+  <img src="./assets/imgs/Static-imgs/banner-3.png" alt="" style="border-radius: 10px; margin:15px; width: 100%;">
+  <div class="img-text">
+   <h4 style="font-weight: bold; margin-bottom: 50px;">The bes Organic <br> Products Online</h4>
+   <button class="btn btn-success">Shop Now -></button>
+  </div>
+ </div>
+</div>
+<div id="products">
+  <h3 style="font-weight: bold;">Products</h3>
+  <div class="card" style="width: 16rem;">
+    <img class="card-img-top" src="./assets/imgs/Products/product-1-2.jpg" alt="Card image cap">
+    <p style="color: gray; margin: 15px;">Snack</p>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
+      <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+      <div style="display: flex; justify-content: space-between;">
+        <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+        <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+      
+    </div>
+  </div>
+</div>
+<div style="margin: 15px;">
+  <h3 style="font-weight: bold;">Deals Of The Day</h3>
+  <div>
+
+  </div>
+</div>
+<div style="display: flex;">
+  <div style="display: flex; flex-direction: column; margin: 20px; width: 25%; height: 600px; ">
+ <h4 class="border-bottom" style="padding: 20px; font-weight: bold;"> Top Selling</h4>
+  <div style="display: flex; height: 25%;">
+    <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+    <div style="display: flex; flex-direction: column; padding: 15px;">
+      <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+       <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+    </div>
+  </div>
+  <div style="display: flex; height: 25%;">
+    <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+    <div style="display: flex; flex-direction: column; padding: 15px;">
+      <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+       <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+    </div>
+  </div>
+  <div style="display: flex; height: 25%;">
+    <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+    <div style="display: flex; flex-direction: column; padding: 15px;">
+      <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+       <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+    </div>
+  </div>
+  </div>
+  <div style="display: flex; flex-direction: column; margin: 20px; width: 25%; height: 600px; ">
+    <h4 class="border-bottom" style="padding: 20px; font-weight: bold;"> Top Selling</h4>
+     <div style="display: flex; height: 25%;">
+       <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+       <div style="display: flex; flex-direction: column; padding: 15px;">
+         <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+       </div>
+     </div>
+     <div style="display: flex; height: 25%;">
+       <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+       <div style="display: flex; flex-direction: column; padding: 15px;">
+         <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+       </div>
+     </div>
+     <div style="display: flex; height: 25%;">
+       <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+       <div style="display: flex; flex-direction: column; padding: 15px;">
+         <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+       </div>
+     </div>
+     </div>
+     <div style="display: flex; flex-direction: column; margin: 20px; width: 25%; height: 600px; ">
+      <h4 class="border-bottom" style="padding: 20px; font-weight: bold;"> Top Selling</h4>
+       <div style="display: flex; height: 25%;">
+         <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+         <div style="display: flex; flex-direction: column; padding: 15px;">
+           <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+            <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+         </div>
+       </div>
+       <div style="display: flex; height: 25%;">
+         <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+         <div style="display: flex; flex-direction: column; padding: 15px;">
+           <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+            <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+         </div>
+       </div>
+       <div style="display: flex; height: 25%;">
+         <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+         <div style="display: flex; flex-direction: column; padding: 15px;">
+           <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+            <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+         </div>
+       </div>
+       </div>
+       <div style="display: flex; flex-direction: column; margin: 20px; width: 25%; height: 600px; ">
+        <h4 class="border-bottom" style="padding: 20px; font-weight: bold;"> Top Selling</h4>
+         <div style="display: flex; height: 25%;">
+           <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+           <div style="display: flex; flex-direction: column; padding: 15px;">
+             <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+              <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+           </div>
+         </div>
+         <div style="display: flex; height: 25%;">
+           <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+           <div style="display: flex; flex-direction: column; padding: 15px;">
+             <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+              <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+           </div>
+         </div>
+         <div style="display: flex; height: 25%;">
+           <img src="./assets/imgs/second/thumbnail-1.jpg" alt="" style=" width: 40%; padding: 15px; ">
+           <div style="display: flex; flex-direction: column; padding: 15px;">
+             <h6 style="font-weight: bold; padding: 10px;">Nestle Original Coffee-Mate Coffee Creamer</h6>
+              <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
+           </div>
+         </div>
+         </div>
+  
+</div>
+<div class="banner" style=" background-image: url('./assets/imgs/Static-imgs/banner-10.png'); display: flex; padding: 20px; justify-content: center; align-items: center; margin: 20px; border-radius: 10px; height: 400px;">
+  <div class="banner-tex" style="color: #253D4E;">
+    <h2 style="font-weight: bold; font-size: 40px;">Stay home & get your daily <br> needs from our shop</h2>
+    <p>Start You'r Daily Shopping with <span style="color: rgb(0, 128, 49);">Nest Mart</span></p>
+    <form action="" style="position: relative; width: 300px;">
+         <input class="banner-input"type="email" placeholder="Your email address">
+         <button class="banner-btn btn btn-success" type="submit" style="position: absolute; right: 0;">Subscribe</button>
+    </form>
+  </div>
+<img src="./assets/imgs/Static-imgs/banner-9.png" alt="" style="height: 500px; width: 50%; height: 100%;">
+</div>
+<div style="display: flex; align-items: center;">
+  <div style="background-color: #F4F6FA; border-radius: 10px; padding: 10px; display: flex; align-items: center; margin:15px; height: 110px; width: 15%;">
+   <img src="./assets/imgs/icons/icon-1.svg" alt="" style="margin:10px;">
+   <div >
+     <h5>Best prices & offers</h5>
+     <p style="color: gray;">Orders $50 or more</p>
+   </div>
+  </div>
+  <div style="background-color: #F4F6FA; border-radius: 10px; padding: 20px; display: flex; align-items: center; margin:15px; height: 100px;">
+    <img src="./assets/imgs/icons/icon-2.svg" alt="" style="margin:10px;">
+    <div>
+      <h5>
+        Free delivery</h5>
+      <p style="color: gray;">24/7 amazing services</p>
+    </div>
+   </div>
+  
+   <div style="background-color: #F4F6FA; border-radius: 10px; padding: 20px; display: flex; align-items: center; margin:15px; height: 100px;">
+    <img src="./assets/imgs/icons/icon-3.svg" alt="" style="margin:10px;">
+    <div>
+      <h5>Great daily deal</h5>
+      <p style="color: gray;">When you sign up</p>
+    </div>
+   </div>
+    <div style="background-color: #F4F6FA; border-radius: 10px; padding: 20px; display: flex; align-items: center; margin:15px; height: 100px;">
+      <img src="./assets/imgs/icons/icon-4.svg" alt="" style="margin:10px;">
+      <div>
+        <h5>Wide assortment</h5>
+        <p style="color: gray;">Mega Discounts</p>
+      </div>
+    </div>
+      <div style="background-color: #F4F6FA; border-radius: 10px; padding: 20px; display: flex; align-items: center; margin:15px; height: 100px;">
+        <img src="./assets/imgs/icons/icon-5.svg" alt="" style="margin:10px;">
+        <div>
+          <h5>Easy returns</h5>
+          <p style="color: gray;">Within 30 days</p>
+        </div>
+  </div>
+</div>
+<div>
+  <footer class=" footer row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-bottom" >
+
+    <div class="">
+      <img src="./assets/imgs/icons/logo.svg" alt="">
+      <p >Awesome grocery store website template</p>
+      <ul class=" items nav flex-column">
+        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0 text-body-secondary "><img src="./assets/imgs/icons/icon-location.svg" alt=""><b>Address:</b> 5171 W Campbell Ave undefined Kent, Utah 53127 United States </a></li>
+        <li class="nav-item mb-2"><img src="./assets/imgs/icons/icon-contact.svg" alt=""><a href="#" class="nav-link p-0 text-body-secondary"><b>Call Us:</b>(+91) - 540-025-124553</a></li>
+        <li class="nav-item mb-2"><img src="./assets/imgs/icons/icon-email-2.svg" alt=""><a href="#" class="nav-link p-0 text-body-secondary"><b>Email:</b> sale@Nest.com</a></li>
+        <li class="nav-item mb-2"><img src="./assets/imgs/icons/icon-clock (1).svg" alt=""><a href="#" class="nav-link p-0 text-body-secondary"><b>Hours:</b> 10:00 - 18:00, Mon - Sat</a></li>
+
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <p style="color: gray;">Company</p>
+      <ul class=" items nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary ">About Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Delivery Information</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms a& Conditions</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Support Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 style="font-weight: bold;">Account</h5>
+      <ul class=" items nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sign in</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">View cart</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">My Wishlist</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Track My Order</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help Ticket</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping Details</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Compare Products</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 style="font-weight: bold;">Corporate</h5>
+      <ul class="items nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Vendor</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affiliate Program</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Farm Business</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Farm Careers</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Suppliers</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Promotions</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 style="font-weight: bold;">Popular</h5>
+      <ul class="items nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Milk and Flavoured Milk</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Butter and Margarine</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Eggs Substitutes</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Marmalades</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sour Cream and Dips</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tea and Kombucha</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cheese</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<script src="./assets/js files/main.js"></script>
 </body>
 </html>

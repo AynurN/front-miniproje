@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "Name": "Snack",
+      "img": "./assets/imgs/Products/cat-3.png",
+      "products": [
+        {
+          "id": "1",
+          "img": "./assets/imgs/Products/snack1.jpg",
+          "desc": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+          "company": "NestFood",
+          "price": "28.85",
+          "oldPrice": "32.8"
+        },
+        {
+          "id": "2",
+          "img": "./assets/imgs/Products/snack2.jpg",
+          "desc": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+          "company": "StarKist",
+          "price": "48.85",
+          "oldPrice": "52.8"
+        },
+        {
+          "id": "3",
+          "img": "./assets/imgs/Products/snack3.jpg",
+          "desc": "Encore Seafoods Stuffed Alaskan Salmon",
+          "company": "NestFood",
+          "price": "35.85",
+          "oldPrice": "37.8"
+        },
+        {
+          "id": "6",
+          "category": "Snack",
+          "img": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-2.jpg",
+          "desc": "Encore Seafoods Stuffed Alaskan Salmon",
+          "company": "NestFood",
+          "price": "34",
+          "oldPrice": null
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "Name": "Vegetables",
+      "img": "./assets/imgs/Products/cat-1.png",
+      "products": [
+        {
+          "id": "4",
+          "img": "./assets/imgs/Products/veg1.jpg",
+          "desc": "Foster Farms Takeout Crispy Classic Buffalo Wings",
+          "company": "NestFood",
+          "price": "17.85",
+          "oldPrice": "19.8"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "Name": "Cake & Milk",
+      "img": "./assets/imgs/Products/cat-13.png",
+      "products": [
+        {
+          "id": "5",
+          "img": "./assets/imgs/Products/cake2.jpg",
+          "desc": "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
+          "company": "Tyson",
+          "price": "22.85",
+          "oldPrice": "24.8"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "Name": "Coffee & Tea",
+      "img": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-14.png",
+      "products": []
+    }
+  ]
+}

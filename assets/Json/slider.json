@@ -1,0 +1,14 @@
+{
+    "sliders":[
+        {"id":"1",
+         "desc":"Dont't miss amazing grocery deals", 
+         "add":"Sign up for the daily newsletter",
+         "img":"./assets/imgs/Static-imgs/slider-1.png"
+        },
+        {
+            "id": "2",
+            "desc": "Fresh Vegetables Big discount",
+            "add": "Save up to 50% off your first order",
+            "img":"./assets/imgs/Static-imgs/slider-2.png"
+          }]
+}
