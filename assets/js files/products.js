@@ -11,10 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             newCategories(data);
-            renderProducts(data)
+            renderProducts(data);
            
         })
 
+  
+
+    });
     function newCategories(categories) {
         categories.forEach(category => {
             const option = document.createElement('option');
@@ -23,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             categorySelect.appendChild(option);
         });
     }
-
+    
     function renderProducts(categories) {
         productList.innerHTML = '';
 
@@ -39,94 +42,48 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td>${product.price}</td>
                     <td>${product.oldPrice}</td>
                     <td>
-                    <a href="${URL + "/" +product.id}" data-bs-target="#updateModal" data-bs-toggle="modal" class="update btn btn-success">Update</a> 
-                    <a href=${URL + "/" +product.id} class="delete btn btn-danger">Delete</a> 
+                    <a href="${URL + "/" +product.id}"id="${product.id}" data-bs-target="#updateModal" data-bs-toggle="modal" class="update btn btn-success">Update</a> 
+                    <a href=${URL + "/" +category.id} id="${product.id}" class="delete btn btn-danger">Delete</a> 
                     </td>
                 `;
                 productList.appendChild(tr);
-                document.querySelectorAll(".delete").forEach(btn =>
-                    btn.addEventListener("click", async function(e) {
-                        e.preventDefault();
-                        
-                        const productId = e.target.dataset.productId;
-                        const categoryId = e.target.dataset.categoryId;
-                        
-                        Swal.fire({
-                            title: "Are you sure?",
-                            text: "You won't be able to revert this!",
-                            icon: "warning",
-                            showCancelButton: true,
-                            confirmButtonColor: "#3085d6",
-                            cancelButtonColor: "#d33",
-                            confirmButtonText: "Yes, delete it!"
-                        }).then(async (result) => {
-                            if (result.isConfirmed) {
-                                try {
-                                    const response = await fetch(URL);
-                                    const categories = await response.json();
-                                    
-                                    const category = categories.find(cat => cat.id == categoryId);
-                                    if (category) {
-                                        const productIndex = category.products.findIndex(prod => prod.id == productId);
-                                        if (productIndex != -1) {
-
-                                            category.products.splice(productIndex, 1);
-                                            const updateResponse = await fetch(`${URL}/${categoryId}`, {
-                                                method: "PUT",
-                                                headers: {
-                                                    "Content-Type": "application/json"
-                                                },
-                                                body: JSON.stringify(category)
-                                            });
-                                            
-                                            if (updateResponse.ok) {
-                                                await Swal.fire({
-                                                    title: "Deleted!",
-                                                    text: "Your product has been deleted.",
-                                                    icon: "success"
-                                                });
-                                                e.target.closest('tr').remove();
-                                            } else {
-                                                const errorText = await updateResponse.text();
-                                                await Swal.fire({
-                                                    title: "Error!",
-                                                    text: `There was a problem deleting the product: ${updateResponse.status} ${errorText}`,
-                                                    icon: "error"
-                                                });
-                                            }
-                                        } else {
-                                            await Swal.fire({
-                                                title: "Error!",
-                                                text: "Product not found.",
-                                                icon: "error"
-                                            });
-                                        }
-                                    } else {
-                                        await Swal.fire({
-                                            title: "Error!",
-                                            text: "Category not found.",
-                                            icon: "error"
-                                        });
-                                    }
-                                } catch (error) {
-                                    console.error('Error:', error);
-                                    await Swal.fire({
-                                        title: "Error!",
-                                        text: "There was a problem with the request.",
-                                        icon: "error"
-                                    });
-                                }
-                            }
-                        });
-                    })
-                );
+              document.querySelectorAll(".delete").forEach(btn=>{
+                btn.addEventListener("click",function(e){
+                     e.preventDefault();
+                     Swal.fire({
+                        title: "Are you sure?",
+                        text: "You won't be able to revert this!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!"
+                      }).then(async(result) => {
+                        if (result.isConfirmed) {
+                          await Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                          });
+                          const response=await fetch(e.target.href);
+                        if(response.ok){
+                            const cats=cat
+                        }
+                        if(response.ok){
+                            alert("Deleted");
+                        }
+                        else{
+                            alert("Error");
+                        }
+                        }
+                      });
+                } )
+              })
                 
                 
             });
         });
     }
-
-    });
    
     createProductForm.addEventListener('submit', async function (e) {
         e.preventDefault();
