@@ -63,7 +63,12 @@
        </div>
             <ul style="display: flex;" class="list">
               <li>Deals</li>
-              <li><select name="" id=""><option value="">Home</option></select></li>
+              <li><select name="" id="selection">
+                <option value="">Home</option>
+               <option value="slider" href="./slider.html">Slider AP</option>
+               <option value="category"><a href="./categories.html">Category AP</a></option>
+               <option value="product"><a href="./products.html">Product AP</a></option>
+              </select></li>
               <li>About</li>
               <li><select name="" id="">
                 <option value="">Shop</option>
@@ -136,25 +141,213 @@
 </div>
 <div id="products">
   <h3 style="font-weight: bold;">Products</h3>
-  <div class="card" style="width: 16rem;">
-    <img class="card-img-top" src="./assets/imgs/Products/product-1-2.jpg" alt="Card image cap">
-    <p style="color: gray; margin: 15px;">Snack</p>
-    <div class="card-body">
-      <h5 class="card-title"></h5>
-      <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
-      <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
-      <div style="display: flex; justify-content: space-between;">
-        <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$32.85</span>    $33.8</p>
-        <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
-      
-    </div>
-  </div>
+  <div id="productCards" style="display: flex;">
 </div>
-<div style="margin: 15px;">
-  <h3 style="font-weight: bold;">Deals Of The Day</h3>
-  <div>
+</div>
+<div>
+  <h3 style="font-weight: bold; margin: 20px;">Daily Best Sells</h3> 
+  <div style="height:500px; display: flex;" >
+    <div style="background-image: url('./assets/imgs/Static-imgs/banner-4.png'); width: 25%; margin: 20px; height: 100%; border-radius: 10px;">
+      <h3 style="padding-left: 30px; padding-top: 30px; font-size: 40px; font-weight: bold; color: #253D4E;">Bring nature <br>into your <br> home</h3>
+      <button style="margin-left: 30px; margin-top: 60px;" class="btn btn-success">Shop now -></button>
+     </div> 
+     <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top: 20px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-wrapper container-sm d-flex  justify-content-around">
+          <div class="card  " style="width: 18rem; height: 500px;">
+      <img src="./assets/imgs/Static-imgs/product-5-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+      <i style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i   style="color:gold"class="fa-regular fa-star"></i>
+      <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+      <div style="display: flex; justify-content: space-between; ">
+        <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+        <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+    <div class="card  " style="width: 18rem; height: 500px;">
+      <img src="./assets/imgs/Static-imgs/product-5-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+      <i style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i  style="color:gold" class="fa-solid fa-star"></i>
+      <i   style="color:gold"class="fa-regular fa-star"></i>
+      <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+      <div style="display: flex; justify-content: space-between; ">
+        <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+        <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+            <div class="card  " style="width: 18rem; height: 500px;">
+              <img src="./assets/imgs/Static-imgs/product-5-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+              <i style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i   style="color:gold"class="fa-regular fa-star"></i>
+              <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+              <div style="display: flex; justify-content: space-between; ">
+                <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+                <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+                
+              </div>
+            </div>
+    </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-wrapper container-sm d-flex   justify-content-around">
+            <div class="card  " style="width: 18rem; height: 500px;">
+              <img src="./assets/imgs/Static-imgs/product-2-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+              <i style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i   style="color:gold"class="fa-regular fa-star"></i>
+              <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+              <div style="display: flex; justify-content: space-between; ">
+                <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+                <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+                
+              </div>
+            </div>
+            <div class="card  " style="width: 18rem; height: 500px;">
+              <img src="./assets/imgs/Static-imgs/product-2-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+              <i style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i   style="color:gold"class="fa-regular fa-star"></i>
+              <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+              <div style="display: flex; justify-content: space-between; ">
+                <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+                <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+                
+              </div>
+            </div>
+            <div class="card  " style="width: 18rem; height: 500px;">
+              <img src="./assets/imgs/Static-imgs/product-2-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text" style="font-weight: bold;">Seed of Change Organic Quinoa, Brown, & Red Rice</p>
+              <i style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i  style="color:gold" class="fa-solid fa-star"></i>
+              <i   style="color:gold"class="fa-regular fa-star"></i>
+              <p style="font-size: 15px;">By <span style="color: green;">NestFood</span></p>
+              <div style="display: flex; justify-content: space-between; ">
+                <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$238.9</span>   $249.9</p>
+                <button class="btn btn-success" style="margin-bottom: 10px;"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+                
+              </div>
+            </div>
+        </div>
+        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+        
 
   </div>
+
+</div>
+<div style="margin: 30px;">
+  <h3 style="font-weight: bold;">Deals Of The Day</h3>
+  <div style="display: flex;">
+   <div style="width: 25%; position: relative; margin: 15px;">
+    <img src="./assets/imgs/Static-imgs/banner-5.png" alt="" style="width: 100%; border-radius: 10px;">
+    <div class="card" style="display: flex; justify-content: center; width: 90%; position: absolute; top:50%; right:5%;" >
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
+        <i style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i   style="color:gold"class="fa-regular fa-star"></i>
+        <p style="font-size: 15px;">By <span style="color: green;">By NestFood</span></p>
+        <div style="display: flex; justify-content: space-between;">
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$35.9</span>   $40</p>
+          <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+  </div>
+  <div style="width: 25%; position: relative; margin: 15px;">
+    <img src="./assets/imgs/Static-imgs/banner-8.png" alt="" style="width: 100%; border-radius: 10px;">
+    <div class="card" style="display: flex; justify-content: center; width: 90%; position: absolute; top:50%; right:5%;" >
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
+        <i style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i   style="color:gold"class="fa-regular fa-star"></i>
+        <p style="font-size: 15px;">By <span style="color: green;">By NestFood</span></p>
+        <div style="display: flex; justify-content: space-between;">
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$35.9</span>   $40</p>
+          <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+  </div>
+  <div style="width: 25%; position: relative; margin: 15px;">
+    <img src="./assets/imgs/Static-imgs/banner-6.png" alt="" style="width: 100%; border-radius: 10px;">
+    <div class="card" style="display: flex; justify-content: center; width: 90%; position: absolute; top:50%; right:5%;" >
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
+        <i style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i   style="color:gold"class="fa-regular fa-star"></i>
+        <p style="font-size: 15px;">By <span style="color: green;">By NestFood</span></p>
+        <div style="display: flex; justify-content: space-between;">
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$35.9</span>   $40</p>
+          <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+  </div>
+  <div style="width: 25%; position: relative; margin: 15px;">
+    <img src="./assets/imgs/Static-imgs/banner-7.png" alt="" style="width: 100%; border-radius: 10px;">
+    <div class="card" style="display: flex; justify-content: center; width: 90%; position: absolute; top:50%; right:5%;" >
+      <div class="card-body">
+        <p class="card-text" style="font-weight: bold;">Seeds of Change Organic Quinoa, Brown, & Red Rice</p>
+        <i style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i  style="color:gold" class="fa-solid fa-star"></i>
+        <i   style="color:gold"class="fa-regular fa-star"></i>
+        <p style="font-size: 15px;">By <span style="color: green;">By NestFood</span></p>
+        <div style="display: flex; justify-content: space-between;">
+          <p style="font-weight: bold; color:gray;"><span style="color: #3BB77E; font-size: 20px;">$35.9</span>   $40</p>
+          <button class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Add</button></div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  
 </div>
 <div style="display: flex;">
   <div style="display: flex; flex-direction: column; margin: 20px; width: 25%; height: 600px; ">

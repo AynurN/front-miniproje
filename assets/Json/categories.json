@@ -8,10 +8,10 @@
         {
           "id": "1",
           "img": "./assets/imgs/Products/snack1.jpg",
-          "desc": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+          "desc": "Seed of Change Organic Quinoa, Brown, & Red Rice",
           "company": "NestFood",
-          "price": "28.85",
-          "oldPrice": "32.8"
+          "price": "28.8",
+          "oldPrice": "32.9"
         },
         {
           "id": "2",
@@ -41,8 +41,8 @@
           "img": "./assets/imgs/Products/veg1.jpg",
           "desc": "Foster Farms Takeout Crispy Classic Buffalo Wings",
           "company": "NestFood",
-          "price": "17.85",
-          "oldPrice": "19.8"
+          "price": "17.9",
+          "oldPrice": "19.7"
         }
       ]
     },

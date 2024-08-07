@@ -71,6 +71,40 @@
           </div>
         </div>
       </div>  
+      <div class="modal" id="updateModal"tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+             <form action="" style="display: flex; flex-direction: column;" id="updatePro"> 
+              <label>Id</label>
+              <input type="number" name="id">
+              <label>Category</label>
+                     <select name="category" id="cate">
+                     </select>
+                     <label>Image URL</label>
+                     <input type="text" name="img">
+                     <label>Description</label>
+                     <input type="text" name="desc">
+                     <label>Company</label>
+                     <input type="text" name="company">
+                     <label>Price</label>
+                     <input type="text" name="price">
+                     <label>Old Price</label>
+                     <input type="text" name="oldPrice">
+
+             </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" form="updatePro" class="btn btn-primary">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="./assets/js files/products.js"></script>
 </body>
 </html>
