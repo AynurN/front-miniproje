@@ -28,15 +28,6 @@
           "company": "NestFood",
           "price": "35.85",
           "oldPrice": "37.8"
-        },
-        {
-          "id": "6",
-          "category": "Snack",
-          "img": "https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-2.jpg",
-          "desc": "Encore Seafoods Stuffed Alaskan Salmon",
-          "company": "NestFood",
-          "price": "34",
-          "oldPrice": null
         }
       ]
     },
